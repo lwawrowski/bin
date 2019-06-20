@@ -1,0 +1,40 @@
+---
+title: "Business Intelligence in SAS"
+author: "Łukasz Wawrowski"
+date: ""
+output: html_document
+---
+
+[A visual introduction to machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+
+[Model Tuning and the Bias-Variance Tradeoff](http://www.r2d3.us/visual-intro-to-machine-learning-part-2/)
+
+# Zbiory danych
+
+## Klasyfikacja
+
+1. [Dataset of homes in San Francisco and New York](data/sf_ny_homes.csv)
+2. [Synthetic Financial Datasets For Fraud Detection](https://goo.gl/4PXWW9)
+3. [Social Network Ads](data/Social_Network_Ads.csv)
+4. [Paralyzed Veterans Mail Campaign](data/pva97nk.sas7bdat) Info: [KDD Cup 1998 Data](https://kdd.ics.uci.edu/databases/kddcup98/kddcup98.html)
+
+## Grupowanie
+
+1. [Klienci](data/klienci.csv)
+2. [Census2000](data/census2000.sas7bdat)
+3. [Stores](data/dungaree.sas7bdat)
+4. [Credit Card Dataset](data/credit_cards.csv)
+
+## Prognozowanie
+
+1. [Jakość powietrza w Polsce](data/pyly_wawa.xlsx)
+2. [Pogoda w Polsce](data/pogoda_wawa.csv)
+3. [Beijing PM2.5](data/PRSA_data.csv)
+
+# Metody
+
+1. Regresja logistyczna
+2. Sieci neuronowe
+3. Metoda k-średnich
+
+![https://twitter.com/computerfact/status/974364686685794304](twitter.png)
