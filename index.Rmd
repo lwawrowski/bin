@@ -11,8 +11,6 @@ output: html_document
 
 ## Klasyfikacja
 
-![https://twitter.com/computerfact/status/974364686685794304](img/twitter.png)
-
 ### Zbiory danych
 
 1. [Dataset of homes in San Francisco and New York](data/sf_ny_homes.csv)
@@ -103,21 +101,17 @@ output: html_document
 
 ### Zbiory danych
 
-1. [Jakość powietrza w Polsce](data/pyly_wawa.xlsx)
+1. [Jakość powietrza i pogoda w Warszawie](data/pyly_pogoda.xlsx) [Grudzień 2017](data/pyly_pogoda_201712.xlsx) [Styczeń 2018](data/pyly_pogoda_201801.xlsx)
 
 - czas - data
 - pm25 - poziom PM2.5 ($\mu g$)
 - pm10 - poziom PM10 ($\mu g$)
-
-2. [Pogoda w Polsce](data/pogoda_wawa.csv)
-
-- czas - data
 - temp - temperatura ($^{\circ}$C)
 - wilgotnosc - wilgotność (%)
 - wiatr - prędkość wiatru (m/s)
 - chmury - pokrycie nieba przez chmury (oktanty)
 
-3. [Beijing PM2.5](data/PRSA_data.csv) Info: [UCI MLR](http://archive.ics.uci.edu/ml/datasets/Beijing+PM2.5+Data)
+2. [Beijing PM2.5](data/PRSA_data.csv) Info: [UCI MLR](http://archive.ics.uci.edu/ml/datasets/Beijing+PM2.5+Data)
 
 - No: row number 
 - year: year of data in this row 
@@ -132,3 +126,23 @@ output: html_document
 - Iws: Cumulated wind speed (m/s) 
 - Is: Cumulated hours of snow 
 - Ir: Cumulated hours of rain 
+
+## Metody
+
+### Klasyfikacja
+
+![https://twitter.com/computerfact/status/974364686685794304](img/twitter.png)
+
+![https://xkcd.com/1838/](img/machine_learning.png)
+
+![https://www.instagram.com/p/BtbJHV1FJwu/](img/nn.jpg)
+
+### Grupowanie
+
+![https://www.brandidea.com/kmeans.html](img/kmeans.jpg)
+
+## Overleaf
+
+[Tables generator](https://www.tablesgenerator.com/latex_tables)
+
+[Learning LaTeX](https://www.overleaf.com/learn)
