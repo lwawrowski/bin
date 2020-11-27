@@ -1,0 +1,95 @@
+---
+title: "Zaawansowane techniki analityczne w biznesie"
+subtitle: "Wstęp"
+author: "&copy; Łukasz Wawrowski"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default.css", "default-fonts.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# dr Łukasz Wawrowski
+
+[wawrowski.edu.pl](http://www.wawrowski.edu.pl/)
+
+.pull-left[
+
+Aktualne zatrudnienie:
+
+- [Uniwersytet Ekonomiczny w Poznaniu](http://statystyka.ue.poznan.pl/)
+- [Sieć Badawcza Łukasiewicz](http://ibemag.pl/pl/)
+- [QED Software](https://qed.pl/)
+- [Collegium Da Vinci](https://cdv.pl/studia-podyplomowe/nowe-media-i-technologie/big-data-analyticssociety/)
+
+Nieaktualne:
+
+- [Urząd Statystyczny w Poznaniu](https://poznan.stat.gov.pl/osrodki/osrodek-statystyki-malych-obszarow-1088/)
+- [DOJI S.A.](https://doji.com.pl/)
+
+]
+
+.pull-right[
+
+Zainteresowania naukowe:
+
+- sztuczna inteligencja
+- statystyka małych obszarów
+- statystyka społeczna - ubóstwo
+- metoda reprezentacyjna
+
+]
+
+---
+
+# Plan zajęć
+
+.pull-left[
+
+**Sobota 28.11.2020**
+
+Systemy wczesnego ostrzegania
+
+8:30 - 10:00   
+10:10 - 11:40   
+11:50 - 13:20   
+
+Wybrane zagadnienia z Data Mining
+
+14:00 - 15:30   
+15:40 - 17:10   
+
+]
+
+.pull-right[
+
+**Niedziela 29.11.2020**
+
+Business Intelligence
+
+8:30 - 10:00   
+10:10 - 11:40   
+
+12:20 - 13:50   
+14:00 - 15:30   
+
+]
+
+---
+
+# Materiały
+
+[wawrowski.edu.pl/bin](http://www.wawrowski.edu.pl/bin/)
+
+[SAS Viya for Learners](https://vfe.sas.com/portal/home)
+
+---
+
+class: inverse, center, middle
+
+# Pytania?

@@ -1,0 +1,160 @@
+---
+title: "Zaawansowane techniki analityczne w biznesie"
+subtitle: "Grupowanie"
+author: "&copy; Łukasz Wawrowski"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default.css", "default-fonts.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(countdown)
+
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, fig.width = 12, fig.height = 6)
+```
+
+# Podział metod
+
+Uczenie nadzorowane - końcowy wynik jest znany
+
+- regresja
+
+- klasyfikacja
+
+Uczenie nienadzorowane - końcowy wynik nie jest znany
+
+- grupowanie obiektów
+
+- grupowanie cech
+
+---
+
+# Podział metod
+
+![](img/wd.jpg)
+
+---
+
+# Grupowanie
+
+1. Metoda iteracyjna
+
+2. Metoda hierarchiczna
+
+---
+
+# Idea
+
+Liczenie odległości pomiędzy analizowanymi obiektami.
+
+Cechy opisujące obiekty mogą być wyrażone w różnych jednostkach np. w segmentacji klientów:
+
+- wiek w latach
+
+- wydatki na zakupy
+
+- liczba wizyt w sklepie
+
+W związku z tym konieczna jest **normalizacja** cech czyli pozbawienie ich mian.
+
+Najpopularniejszą metodą normalizacji jest standaryzacja:
+
+$z=\frac{x-\bar{x}}{s}$
+
+gdzie: $\bar{x}$ - średnia, $s$ - odchylenie standardowe.
+
+---
+
+# Standaryzacja
+
+```{r echo=FALSE}
+library(patchwork)
+
+sklep77 <- readxl::read_xlsx("data/sklep77.xlsx") %>% 
+  filter(czy_otwarty == "Tak")
+
+p1 <- ggplot(sklep77, aes(x=liczba_klientow, y=sprzedaz)) +
+  geom_point() +
+  xlab("Liczba klientów (w osobach)") +
+  ylab("Sprzedaż (w EUR)") +
+  ggtitle("Wartości oryginalne") +
+  theme_light()
+
+p2 <- sklep77 %>% 
+  mutate_at(vars(4:5), scale) %>% 
+  ggplot(aes(x=liczba_klientow, y=sprzedaz)) +
+  geom_point() +
+  xlab("Liczba klientów") +
+  ylab("Sprzedaż") +
+  ggtitle("Wartości standaryzowane") +
+  theme_light()
+
+p1 + p2
+```
+
+
+---
+
+# Metoda k-średnich
+
+1. Wskaż liczbę grup $k$.
+
+2. Wybierz dowolne $k$ punktów jako centra grup.
+
+3. Przypisz każdą z obserwacji do najbliższego centroidu.
+
+4. Oblicz nowe centrum grupy.
+
+5. Przypisz każdą z obserwacji do nowych centroidów. Jeśli któraś obserwacja zmieniła grupę - przejdź do kroku nr 4, a w przeciwnym przypadku zakończ algorytm.
+
+---
+
+# Metoda k-średnich
+
+![](img/kmeans.gif)
+
+[źródło](https://dashee87.github.io/data%20science/general/Clustering-with-Scikit-with-GIFs/)
+
+---
+
+# Przykład
+
+Przeprowadź grupowanie zbioru CARS.
+
+---
+
+# Metoda hierarchiczna
+
+1. Każda obserwacji stanowi jedną z $N$ pojedynczych grup.
+
+2. Na podstawie macierzy odległości połącz dwie najbliżej leżące obserwacje w jedną grupę.
+
+3. Połącz dwa najbliżej siebie leżące grupy w jedną.
+
+4. Powtórz krok nr 3, aż do uzyskania jednej grupy.
+
+---
+
+# Dendrogram
+
+<img src="img/dendrogram.png" height="500px">
+
+[źródło](https://www.data-to-viz.com/graph/dendrogram.html)
+
+---
+
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/HTX8LQ9xHBttR8tWRJm80?controls=none&short_poll=true" width="100%" height="100%" frameBorder="0"></iframe>
+
+---
+
+class: inverse, center, middle
+
+# Pytania?
